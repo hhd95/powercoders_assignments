@@ -1,0 +1,31 @@
+
+.box{
+    background-color: red;
+    min-width: 400px;
+    
+}
+header{
+    background-color: rgb(12, 240, 240);
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: aquamarine;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.content, .content2, .sign{
+    text-align: center;
+}
+.box, .content2, .sign, header{
+    height: 3rem;
+}
+.sign{
+    background-color: blueviolet;
+}

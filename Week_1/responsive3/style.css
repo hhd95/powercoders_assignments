@@ -1,0 +1,16 @@
+.columns {
+    display:flex;
+    flex-direction:row;
+    background-color: blueviolet;
+  }
+  .column{
+    background-color: pink;
+    margin:2rem;
+  }
+  
+  @media screen and (max-width: 25em) {
+    .columns {
+      flex-wrap: nowrap;
+      flex-direction: column;
+    }
+  }
