@@ -1,0 +1,27 @@
+.container div {
+  display: flex;
+  background-color: lightblue;
+  width: 80px;
+  height: 80px;
+  border: 2px solid;
+  align-items: center;
+  justify-content: center;
+  /* margin: 2em; */
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  gap: 50px;
+  border: 2px solid;
+}
+
+/* .alti {
+  flex-grow: 1;
+} */
+
+.container div:nth-child(6) {
+  flex-grow: 1;
+}
