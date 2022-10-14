@@ -125,28 +125,27 @@ const studentList = [
   },
 ];
 
-document.getElementById("card-container").innerHTML = studentList //burdan aşağısı dom
-  .map((student) => {
-    return `
+var str = "";
+for (let i = 0; i < studentList.length; i++) {
+  str += `
    
-   <div class="card-content" onclick = "benimFonksiyonum('${student.name}')">
-          <figure>
-            <img src=${student.picture} alt="" />
-          </figure>
-          <p>
-           <strong>Name:</strong> ${student.name}
-          </p>
-          <p>
-          <strong>Surname:</strong> ${student.surname}
-            
-          </p>
-          <p><strong>Eye Color:</strong> ${student.eye} </p>
-        </div>
-   `;
-  })
-  .join("");
+  <div class="card-content" onclick = "benimFonksiyonum('${studentList[i].name}')">
+         <figure>
+           <img src=${studentList[i].picture} alt="" />
+         </figure>
+         <p>
+          <strong>Name:</strong> ${studentList[i].name}
+         </p>
+         <p>
+         <strong>Surname:</strong> ${studentList[i].surname}
+           
+         </p>
+         <p><strong>Eye Color:</strong> ${studentList[i].eye} </p>
+       </div>
+  `;
+}
 
+document.getElementById("card-container").innerHTML = str;
 function benimFonksiyonum(str) {
   alert(str);
 }
-
