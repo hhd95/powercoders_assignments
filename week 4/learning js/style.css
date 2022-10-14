@@ -1,0 +1,29 @@
+#card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-content {
+  width: 15rem;
+  border: 2px solid rgb(121, 3, 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  border-radius: 7px;
+}
+
+img {
+  width: 15rem;
+  margin: 0;
+  height: 15rem;
+  border-radius: 7px 7px 0 0;
+}
+
+figure {
+  margin: 0;
+}
+p {
+  margin-left: 10px;
+  color: darkblue;
+  font-size: 1.2rem;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
