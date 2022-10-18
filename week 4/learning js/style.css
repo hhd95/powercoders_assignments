@@ -1,14 +1,21 @@
-#card-container {
-  display: flex;
-  flex-wrap: wrap;
+html {
+  background-color: rgb(164, 202, 240);
 }
 
+#card-container {
+  display: flex;
+  flex-wrap: wrap;  
+}
 .card-content {
   width: 15rem;
-  border: 2px solid rgb(121, 3, 3);
+  border: 2px solid rgb(162, 3, 3);
   margin-left: 30px;
   margin-top: 30px;
   border-radius: 7px;
+}
+.card-content p,
+strong {
+  color: rgb(30, 27, 27);
 }
 
 img {
@@ -18,12 +25,46 @@ img {
   border-radius: 7px 7px 0 0;
 }
 
+
+.img  
+{
+    position: relative;
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    -moz-transform: scale(1);
+    transition: all .3s ease-in;
+    -moz-transition: all .3s ease-in;
+    -webkit-transition: all .3s ease-in;
+    -ms-transition: all .3s ease-in;
+}
+
+
+
 figure {
   margin: 0;
 }
 p {
   margin-left: 10px;
-  color: darkblue;
+  color: rgb(74, 74, 183);
   font-size: 1.2rem;
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+.navbar {
+  background-color: #1f027d9a;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(236, 234, 246);
+  font-size: 68px;
+}
+.footer {
+  background-color: #1f027d9a;
+  height: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(236, 234, 246);
+  font-size: 55px;
+  margin-top: 50px;
 }

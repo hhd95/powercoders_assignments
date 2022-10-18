@@ -1,14 +1,5 @@
 const studentList = [
   {
-    name: "Hasan",
-    surname: "Danaci",
-    age: 41,
-    eye: "green",
-    hobby: "ice skating",
-    picture: "./pictures/hasan.jpg",
-  },
-
-  {
     name: "Enes",
     surname: "BORA",
     age: 38,
@@ -78,7 +69,7 @@ const studentList = [
     surname: "Güldibi",
     age: 28,
     eye: "black",
-    hobby: "tracking",
+    hobby: "trekking",
     picture: "./pictures/murat.jpg",
   },
 
@@ -107,6 +98,42 @@ const studentList = [
     hobby: "hiking",
     picture: "./pictures/Yusuf.jpg",
   },
+
+  {
+    name: "Sevim",
+    surname: "Gokturk",
+    age: 34,
+    eye: "brown",
+    hobby: "reading",
+    picture: "./pictures/Sevim.jpg",
+  },
+
+  {
+    name: "Yuliia",
+    surname: "Kuts",
+    age: 34,
+    eye: "green",
+    hobby: "cooking",
+    picture: "./pictures/julia.jpg",
+  },
+  {
+    name: "Abdulfatah",
+    surname: "Shieryar",
+    age: 34,
+    eye: "black",
+    hobby: "swimming",
+    picture: "./pictures/Abdulfettah.jpg",
+  },
+
+  {
+    name: "K.Tuba",
+    surname: "Türkcan Karaca",
+    age: 25,
+    eye: "brown",
+    hobby: "travel",
+    picture: "./pictures/tuba.jpg",
+  },
+
   {
     name: "Emin",
     surname: "Yilmaz",
@@ -116,12 +143,12 @@ const studentList = [
     picture: "./pictures/emin.jpg",
   },
   {
-    name: "Yuliia",
-    surname: "Kuts",
-    age: 34,
+    name: "Ni Luh",
+    surname: "Ariani",
+    age: 41,
     eye: "green",
-    hobby: "cooking",
-    picture: "./pictures/julia.jpg",
+    hobby: "ice skating",
+    picture: "./pictures/Ari.jpg",
   },
 ];
 
@@ -129,7 +156,7 @@ var str = "";
 for (let i = 0; i < studentList.length; i++) {
   str += `
    
-  <div class="card-content" onclick = "benimFonksiyonum('${studentList[i].name}')">
+  <div class="card-content"  onmouseover ="when_hovering(this.id)" id="div${i}" onclick = "benimFonksiyonum('${studentList[i].name}')">
          <figure>
            <img src=${studentList[i].picture} alt="" />
          </figure>
@@ -141,6 +168,7 @@ for (let i = 0; i < studentList.length; i++) {
            
          </p>
          <p><strong>Eye Color:</strong> ${studentList[i].eye} </p>
+         <p><strong>Hobby:</strong> ${studentList[i].hobby}\</p>
        </div>
   `;
 }
@@ -148,4 +176,9 @@ for (let i = 0; i < studentList.length; i++) {
 document.getElementById("card-container").innerHTML = str;
 function benimFonksiyonum(str) {
   alert(str);
+}
+
+function when_hovering(ic) {
+  console.log(document.getElementById(ic).getElementsByTagName("strong"));
+  document.getElementById(ic).getElementsByTagName("strong").f;
 }
