@@ -1,0 +1,20 @@
+body {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.exerciseSection {
+  border: 1px red solid;
+  border-radius: 5px;
+  padding: 20px;
+}
+.outputSpan {
+  margin-top: 30px;
+  min-height: 60px;
+  font-weight: bold;
+  font-size: 3em;
+}
+.outputSpan .highlighted {
+  color: rgb(220, 120, 20);
+}
