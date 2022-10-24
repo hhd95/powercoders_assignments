@@ -223,3 +223,24 @@ textarea {
   background-color: #001530;
   cursor: pointer;
 }
+
+
+#spin {
+  color:red;
+}
+#spin:after {
+  content:"";
+  animation: spin 2s linear infinite;
+}
+@keyframes spin {
+  0% { content:"Passion"; }
+  10% { content:"Target"; }
+  20% { content:"Skills"; }
+  30% { content:"New Route"; }
+  40% { content:"Enhancing"; }
+  50% { content: "Developing"; }
+  60% { content: "Business"; }
+  70% { content: "Cybersecurity"; }
+  80% { content: "Dream"; }
+  90% { content: "Desire"; }
+}
