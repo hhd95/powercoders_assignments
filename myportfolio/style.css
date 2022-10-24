@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  box-sizing: content-box;
+  background-color: rgb(240, 240, 240);
+}
+
+.visible {
+  display: block;
+}
+
+.non-visible {
+  display: none;
+}
+
+#about-me p {
+  font-size: 20px;
+  color: darkblue;
+}
+
+header {
+  background-color: rgba(113, 22, 15, 0.822);
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 100%;
+  height: 150px;
+  display: flex;
+}
+
+#profile-photo-container {
+  width: 300px;
+  background-color: #001530;
+  display: flex;
+  justify-content: center;
+}
+
+#profile-photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  position: relative;
+  top: 12vh;
+}
+
+#profile-introduce {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.profile-introduce-paragraph:nth-child(1) {
+  text-align: center;
+  font-size: 2.4rem;
+  margin: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #cad7e9;
+}
+
+.profile-introduce-paragraph:nth-child(2) {
+  text-align: center;
+  font-size: 2rem;
+  margin: 10px;
+  color: #e2e9f2;
+  font-style: normal;
+}
+
+.profile-introduce-paragraph:nth-child(3) {
+  text-align: center;
+  font-size: 1.3rem;
+  margin: 5px;
+  color: #bccee4;
+  font-style: normal;
+}
+
+nav {
+  background-color: rgb(9, 71, 71);
+  width: 367px;
+}
+
+nav > ul {
+  width: 200px;
+  margin-top: 100px;
+  list-style: none;
+  padding-left: 20px;
+}
+
+nav li {
+  margin-top: 50px;
+}
+
+nav button {
+  width: 200px;
+  background-color: #6c6cff;
+  font-size: 1.5rem;
+  border: none;
+  padding: 10px 0px;
+  border-radius: 7px;
+  color: white;
+}
+
+nav button:hover {
+  background-color: gray !important;
+  cursor: pointer;
+}
+
+#main-container {
+  display: flex;
+  background-color: beige;
+}
+
+.main-content {
+  margin-left: 25px;
+  margin-bottom: 100px;
+  padding: 0 120px;
+  width: 100%;
+}
+
+.primary-title {
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+h3 {
+  margin-top: 40px;
+}
+
+/* about  */
+#my-languages progress {
+  margin-bottom: 20px;
+}
+
+/* education */
+
+.education-table {
+  width: 65vw;
+  border: 1px solid black;
+  margin: auto;
+  margin-top: 1.1vh;
+}
+
+.education-row {
+  padding: 0px 20px;
+  width: 60vw;
+}
+
+.education-column {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+  padding: 0px 20px;
+}
+
+.education-column-right {
+  width: 30vw;
+}
+
+/* contact me */
+#contact form {
+  width: 400px;
+  padding: 20px 50px;
+  height: 400px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background-color: rgb(33, 199, 199);
+  border-radius: 7px;
+}
+
+fieldset {
+  width: 350px;
+  margin: auto;
+}
+
+legend {
+  color: #001530;
+  font-size: 30px;
+}
+
+.form-example {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+#contact input,
+textarea {
+  width: 240px;
+  border-radius: 3px;
+  border: none;
+}
+
+#contact input {
+  height: 20px;
+}
+
+#contact label {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#contact p {
+  font-size: 12px;
+  color: red;
+  margin: 0;
+}
+
+#form-submit {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact button {
+  border: none;
+  background-color: gray;
+  color: white;
+  margin-top: 30px;
+  border-radius: 5px;
+  width: 100px;
+  padding: 10px 0;
+}
+
+#contact button:hover {
+  background-color: #001530;
+  cursor: pointer;
+}

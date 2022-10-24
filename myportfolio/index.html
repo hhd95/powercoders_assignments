@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>Hasan Danaci profile page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div id="profile-photo-container">
+          <img
+            src="./pictures/profile_photo.png"
+            alt="profile_photo"
+            id="profile-photo"
+          />
+        </div>
+        <div id="profile-introduce">
+          <p
+            class="animate__animated animate__backInDown profile-introduce-paragraph"
+          >
+            Welcome to My Page
+          </p>
+          <p
+            class="animate__animated animate__backInLeft animate__delay-1s profile-introduce-paragraph"
+          >
+            Hi, I'm Hasan Danaci
+          </p>
+          <p
+            class="animate__animated animate__backInRight animate__delay-1s profile-introduce-paragraph"
+          >
+            I am a Junior Web Developer
+          </p>
+        </div>
+      </header>
+      <section id="main-container">
+        <nav>
+          <ul>
+            <li>
+              <button
+                type="button"
+                id="about-me-button"
+                onclick="handleClickAbout()"
+              >
+                About me
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                id="education-button"
+                onclick="handleClickEducation()"
+              >
+                My Education
+              </button>
+            </li>
+            <li>
+              <button
+                type="button"
+                id="contact-button"
+                onclick="handleClickContact()"
+              >
+                Contact
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <section class="main-content">
+          <div id="about-me">
+            <h1 class="primary-title">About me</h1>
+            <article>
+              <p>
+                Former Police Chef (Technical Surveillance Analyst) in charge of
+                undercover investigations against mafia, narcotics and financial
+                crimes at Istanbul Police Department. With 11 years law
+                enforcement intelligence experience, a fast-learner and
+                motivated team player eager to learn Cybersecurity / Data
+                Analysis, ready to start a new career as an analyst. <br />
+                <br />
+                I started coding in Swisscom NGG Course 6 months ago which led
+                my path into Powercoders. And currently I am a participant of
+                Powercoders Coding Academy for Refugees. I am an enthusiastic
+                developer with a passion for software and technology. I am very
+                interested in enhancing my IT knowledge, I can describe myself
+                flexible, compatible and agile in teamwork.
+              </p>
+            </article>
+
+            <article id="my-languages">
+              <h3>Language Information</h3>
+              <label for="file">German B1</label><br />
+              <progress id="file" value="70" max="100">70%</progress><br />
+
+              <label for="file">English C1</label><br />
+              <progress id="file" value="87" max="100">87%</progress><br />
+
+              <label for="file">Turkish (Native)</label><br />
+              <progress id="file" value="100" max="100">100%</progress>
+            </article>
+          </div>
+
+          <div id="my-education">
+            <h1 class="primary-title">My Education</h1>
+
+            <div class="education-table">
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2022, Powercoders Coding Academy </span>
+                  <div class="education-column-right">
+                    <span
+                      >HTML, CSS, JS & business & social skills training
+                    </span>
+                  </div>
+                </div>
+                <hr />
+              </div>
+
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2022, Applied Ethical Hacker Course </span>
+                  <div class="education-column-right">
+                    <span>Boğaziçi University Cybersecurity Center, Udemy</span>
+                  </div>
+                </div>
+                <hr />
+              </div>
+
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2022, Bern (Swisscom)</span>
+                  <div class="education-column-right">
+                    <span>Basics HTML, CSS - Javascript </span>
+                  </div>
+                </div>
+                <hr />
+              </div>
+
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2022, LinkedIn Online Course </span>
+                  <div class="education-column-right">
+                    <span>Cybersecurity with Cloud Computing</span>
+                  </div>
+                </div>
+                <hr />
+              </div>
+
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2022, LinkedIn Online Course </span>
+                  <div class="education-column-right">
+                    <span>HTML Essential Training</span>
+                  </div>
+                </div>
+                <hr />
+              </div>
+
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2021, Coursera Online Course </span>
+                  <div class="education-column-right">
+                    <span>Google Technical Support Fundamentals</span>
+                  </div>
+                </div>
+                <hr />
+              </div>
+
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2021, Coursera Online Course </span>
+                  <div class="education-column-right">
+                    <span
+                      >Introduction to Data Analysis using Microsoft Excel</span
+                    >
+                  </div>
+                </div>
+                <hr />
+              </div>
+
+              <div class="education-row">
+                <div class="education-column">
+                  <span>2021, Coursera Online Course </span>
+                  <div class="education-column-right">
+                    <span
+                      >Business English: Basics The Hong Kong University of
+                      Science and Technology
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="contact">
+            <h1 class="primary-title">Contact Me</h1>
+            <form>
+              <fieldset>
+                <legend>Contact form</legend>
+
+                <div class="form-example">
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="email">Email:</label>
+                  <input type="email" id="email" name="email" required />
+                </div>
+
+                <div class="form-example">
+                  <label for="message">Message:</label>
+                  <div>
+                    <textarea
+                      id="message"
+                      name="message"
+                      aria-describedby="format"
+                      maxlength="120"
+                      rows="4"
+                    ></textarea>
+                    <p id="format">It must be a maximum of 240 characters</p>
+                  </div>
+                </div>
+
+                <div id="form-submit">
+                  <button type="submit" aria-label="Submit">Submit</button>
+                </div>
+              </fieldset>
+            </form>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="./app.js"></script>
+  </body>
+</html>
