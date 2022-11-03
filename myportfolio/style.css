@@ -15,6 +15,7 @@ body {
 #about-me p {
   font-size: 20px;
   color: rgb(44, 6, 121);
+  text-align: justify;
 }
 
 header {
@@ -282,7 +283,7 @@ textarea {
   text-decoration: none;
 }
 body {
-  background-color: #fcdc29;
+  background-color: #7a7adf85;
 }
 
 .wrapper {
@@ -324,7 +325,7 @@ body {
   margin-right: 10px;
 }
 .subMenu {
-  background: #273057;
+  background: rgba(80, 107, 241, 0.927);
   overflow: hidden;
   transition: max-height 0.7s;
   max-height: 0;
@@ -374,7 +375,7 @@ body {
   border-bottom: 24px solid transparent;
 }
 .subMenu a:hover {
-  background: #273057;
+  background: #5697b8;
   background: -moz-linear-gradient(
     top,
     #273057 0%,
@@ -429,7 +430,7 @@ footer .fa-heart {
   color: red;
 }
 footer .fa-dev {
-  color: #fff;
+  color: rgb(96, 67, 67);
 }
 footer .fa-twitter-square {
   color: #1da0f1;
@@ -441,14 +442,14 @@ fotter .fa-linkedin {
   color: #0073b1;
 }
 footer .fa-codepen {
-  color: #fff;
+  color: rgb(103, 57, 57);
 }
 footer a {
   color: #3c97bf;
   text-decoration: none;
   margin-right: 5px;
 }
-.youtubeBtn {
+/* .youtubeBtn {
   position: fixed;
   left: 50%;
   transform: translatex(-50%);
@@ -496,5 +497,5 @@ footer a {
   50% {
     color: #ff0000;
   }
-}
+} */
 /* footer  */

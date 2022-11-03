@@ -63,3 +63,10 @@ function slide() {
   /** container for that image: img-tag to replace the src attribute */
   let currentSlide = images[counter];
 }
+var map;
+function initMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: { lat: -34.397, lng: 150.644 },
+    zoom: 8,
+  });
+}
