@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <script>
+        function myFunction() {
+          document.getElementById("demo3").innerHTML = "degistirdim bak.";
+        }
+        </script>
+  </head>
+  <body>
+    
+<h1 id="demo"> onclick ile css degistirme
+
+</h1>
+
+<button type="button"
+onclick="document.getElementById('demo').style.color='blue'">buraya tikla</button>
+
+<!--SOR ,.style.fontSize='55px' -->
+</button>
+<br>
+
+
+<p id="demo1">Bu yaziyi Js ile saklayabilirsin</p>
+
+<button type="button"
+onclick="document.getElementById('demo1').style.display ='none'"> saklamak için tikla
+</button>
+<br>
+
+
+<p id="demo2" style="display:none">Hello JavaScript!</p>
+
+<button type="button" onclick="document.getElementById('demo2').style.display='block'">Saklanma gel</button>
+<br>
+
+<!-- fonksiyon -->
+<p id="demo3"> bu yaziyi js ile değiştir
+ </p>
+<button type="button" onclick="myFunction()"> degistir   
+</button>
+
+ 
+
+<script>
+    function myFunction() {
+      document.getElementById("demo3").innerHTML = "degistirdim bak.";
+    }
+    </script>
+
+
+    <p id="demo4"></p>
+    
+   
+
+    
+    <script>
+    let carName = "Volvo";
+ 
+    document.getElementById("demo4").innerHTML = carName;
+    </script>
+ 
+
+
+
+    <!-- <script src="app.js"></script>  -->
+  </body>
+</html>

@@ -1,0 +1,32 @@
+* {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center;
+}
+body {
+  background-color: black;
+}
+#container {
+  border-radius: 2px;
+  text-align: center;
+  background: red;
+  display: inline-block;
+  padding: 0 5px;
+  border-radius: 10px;
+}
+#gerisayım > div {
+  float: left;
+  background: black;
+  padding: 15px 20px;
+  margin: 10px 5px;
+  text-align: center;
+  border-radius: 4px;
+}
+#gerisayım > div > div:first-child {
+  font-size: 28px;
+  color: white;
+}
+#gerisayım > div > div:last-child {
+  text-transform: capitalize;
+  font-size: 14px;
+  color: white;
+}

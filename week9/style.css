@@ -1,0 +1,17 @@
+body {
+  background-color: rgb(19, 90, 165);
+  color: beige;
+}
+
+nav {
+  background-color: rgba(49, 98, 210, 0.911);
+}
+
+span {
+  margin: 5em;
+}
+
+div {
+  text-align: center;
+  margin-top: 20em;
+}
